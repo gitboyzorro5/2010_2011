@@ -40,7 +40,7 @@ SP2 <- subset(allteams20102011, Div == "SP2")
 T1 <- subset(allteams20102011, Div == "T1")
 
 #########################################################
-ROUND_20102011 <- 7
+ROUND_20102011 <- 14
 #########################################################
 B1 <- B1_rounds[B1_rounds$b1_matchday <= ROUND_20102011,]
 B1$FTHG <- as.numeric(B1$FTHG)
@@ -130,7 +130,6 @@ T1 <- T1_rounds[T1_rounds$t1_matchday <= ROUND_20102011,]
 T1$FTHG <- as.numeric(T1$FTHG)
 T1$FTAG <- as.numeric(T1$FTAG)
 T1$TG <- as.numeric(T1$TG)
-
 
 
 

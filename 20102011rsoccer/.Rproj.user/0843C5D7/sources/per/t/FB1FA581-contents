@@ -572,4 +572,3 @@ t1_goaltotalsv2 <- cbind(t1_goaltotalsv2,t1_avg_totalgoals)
 # write.xlsx(t1_goaltotalsv2,'GoalTotalsV2.xlsx',sheetName = "T1", append = TRUE)
 
 
-

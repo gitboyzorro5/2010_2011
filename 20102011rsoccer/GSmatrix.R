@@ -409,26 +409,26 @@ for(t1_rowhgs in 1:nrow(t1_goalscored_h)) {
 
 ##########################################################################################################################
 ##########################################################################################################################
-#b1_krounds is total rounds as per current season
-b1_krounds <- tail(unique(B1_rounds$b1_matchday),1)
-b1_goalscored_h <- data.frame(matrix(nrow = length(b1_teams),ncol = b1_krounds))
-
-b1_goalsfor <- c()
-for(i_b1_krounds in 1:b1_krounds)
-{
-
-  for (i_b1_gs in 1:length(b1_teams))
-  {
-
-    b1_goalsfor[i_b1_gs] <- B1_rounds$FTHG[B1_rounds$HomeTeam == b1_teams[i_b1_gs] & B1_rounds$b1_matchday <= b1_krounds]
-
-  }
-
-  b1_roundmatrix[,i_b1_krounds] <- as.data.frame(points_b1_rnds$b1_rank_rnds)
-
-}
-
-b1_roundmatrix <- cbind(b1_teams,b1_roundmatrix)
-
-b1_goalsfor
-head(B1_rounds,15)
+# #b1_krounds is total rounds as per current season
+# b1_krounds <- tail(unique(B1_rounds$b1_matchday),1)
+# b1_goalscored_h <- data.frame(matrix(nrow = length(b1_teams),ncol = b1_krounds))
+#
+# b1_goalsfor <- c()
+# for(i_b1_krounds in 1:b1_krounds)
+# {
+#
+#   for (i_b1_gs in 1:length(b1_teams))
+#   {
+#
+#     b1_goalsfor[i_b1_gs] <- B1_rounds$FTHG[B1_rounds$HomeTeam == b1_teams[i_b1_gs] & B1_rounds$b1_matchday <= b1_krounds]
+#
+#   }
+#
+#   b1_roundmatrix[,i_b1_krounds] <- as.data.frame(points_b1_rnds$b1_rank_rnds)
+#
+# }
+#
+# b1_roundmatrix <- cbind(b1_teams,b1_roundmatrix)
+#
+# b1_goalsfor
+# head(B1_rounds,15)
